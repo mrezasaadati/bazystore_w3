@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bazystore w3</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lalezar" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div class="w3-top">
+        <div class="w3-bar w3-black">
+            <span class="branding w3-bar-item w3-right w3-mobile">بازی استور</span>
+            <span class="icon w3-left w3-mobile">
+                <a href="#contact" class="w3-bar-item w3-button w3-mobile w3-hover-red">تماس با ما</a>
+                <a href="#services" class="w3-bar-item w3-button w3-mobile w3-hover-red">خدمات</a>
+                <a href="#about" class="w3-bar-item w3-button w3-mobile w3-hover-red">درباره ما</a>
+                <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-red">صفحه اصلی</a>
+    </span>
+        </div>
+    </div>
+
+    <!-- Showcase -->
+    <section class="showcase">
+        <div class="w3-container w3-center">
+            <h1 class="w3-text-shadow w3-animate-opacity">بازی استور</h1>
+            <hr>
+            <p class="w3-animate-opacity">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با
+                هدف بهبود ابزارهای کاربردی می باشد.</p>
+            <button class="w3-button w3-red w3-opacity w3-large" onclick="document.getElementById('login').style.display='block'"><i class="fa fa-hand-o-left"></i>  ورود به سایت</button>
+        </div> 
+    </section>
+
+    <!-- The Modal -->
+    <div id="login" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+        
+              <div class="w3-center"><br>
+                <span onclick="document.getElementById('login').style.display='none'" class="w3-button w3-xlarge w3-hover-red w3-display-topleft" title="Close Modal">&times;</span>
+                <img src="img/avatar.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+              </div>
+        
+              <form class="w3-container">
+                <div class="w3-section">
+                  <label><b>نام کاربری</b></label>
+                  <input class="w3-input w3-border w3-margin-bottom" type="text" name="usrname" required>
+                  <label><b>رمز عبور</b></label>
+                  <input class="w3-input w3-border" type="password"name="psw" required>
+                  <button class="w3-button w3-block w3-green w3-section w3-padding" type="submit">ورود به سایت</button>
+                  <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> من را بخاطر بسپار
+                </div>
+              </form>
+        
+              <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                <button onclick="document.getElementById('login').style.display='none'" type="button" class="w3-button w3-red">انصراف</button>
+                <span class="w3-right w3-padding w3-hide-small"><a href="#">رمز عبور</a> را فراموش کرده اید؟ </span>
+              </div>
+        
+            </div>
+          </div>
+
+    <!-- section 1 -->
+    <section class="section w3-red  w3-hover-opacity">
+        <div class="w3-container w3-center">
+            <i class="fa fa-home"></i>
+            <h2>به بازی استور خوش آمدید</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+        </div>
+    </section>
+
+    <!-- section 2 -->
+    <section class="section w3-light-grey  w3-hover-opacity">
+        <div class="w3-container w3-center">
+            <i class="fa fa-cog"></i>
+            <h2>ما به آینده می اندیشیم</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="w3-container">
+            <div class="w3-row-padding">
+                <div class="w3-col m5">
+                    <img src="img/about.jpeg" alt="">
+                </div>
+                <div class="w3-col m7">
+                    <button onclick="bazyFunction('what')" class="w3-button w3-block w3-right-align w3-black">
+                                بازی استورچیست؟</button>
+
+                    <div id="what" class="w3-container w3-show">
+                        <h3>بازی استورچیست</h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                            و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز
+                            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                    </div>
+                    <button onclick="bazyFunction('who')" class="w3-button w3-block w3-right-align w3-dark-grey">
+                            قابلیت ها</button>
+
+                    <div id="who" class="w3-container w3-hide">
+                        <h3>قابلیت های بازی استور</h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                            و .
+                        </p>
+                    </div>
+                    <button onclick="bazyFunction('where')" class="w3-button w3-block w3-right-align w3-black">
+                        بازی استور کجاست؟</button>
+
+                    <div id="where" class="w3-container w3-hide">
+                        <h3>بازی استور کجاست</h3>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                            و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- services heading -->
+    <section id="services" class="section w3-red  w3-hover-opacity">
+        <div class="w3-container w3-center">
+            <h2 class="w3-text-shadow">خدمات ما</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section id="services" class="section w3-light-grey">
+        <div class="w3-container w3-center">
+            <div class="w3-row">
+                <div class="w3-col m3">
+                    <i class="fa fa-globe w3-red w3-padding-small w3-round-xlarge"></i>
+                    <h3>اینترنت مارکتینگ</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+                <div class="w3-col m3">
+                    <i class="fa fa-line-chart w3-red w3-padding-small w3-round-xlarge"></i>
+                    <h3>بهینه سازی سایت</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+                <div class="w3-col m3">
+                    <i class="fa fa-mobile w3-red w3-padding-small w3-round-xlarge"></i>
+                    <h3>اپلیکیشن موبایل</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+                <div class="w3-col m3">
+                    <i class="fa fa-laptop w3-red w3-padding-small w3-round-xlarge"></i>
+                    <h3>طراحی وب سایت</h3>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact heading -->
+    <section id="contact" class="section w3-dark-grey  w3-hover-opacity">
+        <div class="w3-container w3-center">
+            <h2 class="w3-text-shadow">تماس با ما</h2>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه
+                روزنامه و مجله در ستون و سطرآنچنان که لازم است </p>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="section">
+        <div class="w3-container">
+            <div class="w3-card-4">
+
+                <div class="w3-container w3-dark-grey">
+                    <h2>فرم تماس با ما</h2>
+                </div>
+
+                <form class="w3-container w3-padding-xlarge">
+                    <br>
+                    <label class="w3-label">نام و نام خانوادگی</label>
+                    <input class="w3-input" type="text">
+                    <br>
+                    <label class="w3-label">ایمیل</label>
+                    <input class="w3-input" type="email">
+                    <br>
+                    <label class="w3-label" style="margin-top:15px">پیغام</label>
+                    <textarea class="w3-input w3-border" style="resize:none;height:150px;margin-top:15px"></textarea>
+                    <br>
+                    <button type="button" class="w3-btn w3-padding w3-red" style="width:120px;margin-bottom:20px">ارسال  &nbsp; ❯</button>
+                    <br>
+
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w3-black w3-padding-xlarge w3-center">
+        <div class="w3-container w3-center">
+            <p>تمامی حقوق برای فروشگاه اینترنتی بازی استور محفوظ می باشد.</p>
+        </div>
+    </footer>
+
+    <script>
+        function bazyFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+</body>
+
+</html>
